@@ -11,7 +11,6 @@ void shell_sort(int *array, size_t size)
 	int holder;
 
 	for (interval = 1; interval < size / 3; interval = interval * 3 + 1);
-
 	while (interval > 0)
 	{
 		for (j = interval; j < size; j++)
@@ -20,12 +19,9 @@ void shell_sort(int *array, size_t size)
 			{
 				if (array[i] >= array[i - interval])
 					break;
-				else
-				{
-					holder = array[i];
-					array[i] = array[i - interval];
-					array[i - interval] = holder;
-				}
+				holder = array[i];
+				array[i] = array[i - interval];
+				array[i - interval] = holder;
 			}
 		}
 		interval /= 3;
