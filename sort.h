@@ -36,5 +36,7 @@ void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
 int findmax(int *array, size_t size);
+void ms(int *a, size_t lb, size_t ub, int *b);
+void merge(int *a, size_t lb, size_t mid, size_t ub, int *b);
 
 #endif
