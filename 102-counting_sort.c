@@ -32,7 +32,7 @@ void counting_sort(int *array, size_t size)
 		free(count);
 		return;
 	}
-	for (j = size - 1; j--;)
+	for (j = size; j--;)
 		sorted[--count[array[j]]] = array[j];
 
 	for (i = 0; i < size; i++)
